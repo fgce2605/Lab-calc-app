@@ -4,7 +4,7 @@ import { calculateHydroxylValue, evaluatePassFail } from '../../utils/formulas';
 import { addTestResultToBatch, getActiveUser } from '../../utils/storage';
 import { GaugeMeter } from '../GaugeMeter';
 import { NumericKeypadModal } from '../NumericKeypadModal';
-import { Calculator, Save, AlertTriangle, Keypad } from 'lucide-react';
+import { Calculator, Save, AlertTriangle, Hash } from 'lucide-react';
 
 interface Props {
   activeBatch?: Batch;
@@ -95,7 +95,7 @@ export const HydroxylValueCalculator: React.FC<Props> = ({ activeBatch, activeSp
                   onClick={() => setKeypadField({ name: 'vBlank', title: 'V_blank', unit: 'mL', val: vBlank })}
                   className="text-[10px] text-violet-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -115,7 +115,7 @@ export const HydroxylValueCalculator: React.FC<Props> = ({ activeBatch, activeSp
                   onClick={() => setKeypadField({ name: 'vSample', title: 'V_sample', unit: 'mL', val: vSample })}
                   className="text-[10px] text-violet-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -153,7 +153,7 @@ export const HydroxylValueCalculator: React.FC<Props> = ({ activeBatch, activeSp
                   onClick={() => setKeypadField({ name: 'weight', title: 'Sample Weight', unit: 'g', val: weight })}
                   className="text-[10px] text-violet-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input

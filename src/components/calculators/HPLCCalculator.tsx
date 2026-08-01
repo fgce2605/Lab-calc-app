@@ -4,7 +4,7 @@ import { calculateHPLC, evaluatePassFail } from '../../utils/formulas';
 import { addTestResultToBatch, getActiveUser } from '../../utils/storage';
 import { GaugeMeter } from '../GaugeMeter';
 import { NumericKeypadModal } from '../NumericKeypadModal';
-import { Calculator, Save, AlertTriangle, Keypad } from 'lucide-react';
+import { Calculator, Save, AlertTriangle, Hash } from 'lucide-react';
 
 interface Props {
   activeBatch?: Batch;
@@ -85,7 +85,7 @@ export const HPLCCalculator: React.FC<Props> = ({ activeBatch, activeSpec, onRes
                   onClick={() => setKeypadField({ name: 'areaSample', title: 'Sample Peak Area', unit: 'mAU*s', val: areaSample })}
                   className="text-[10px] text-indigo-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -104,7 +104,7 @@ export const HPLCCalculator: React.FC<Props> = ({ activeBatch, activeSpec, onRes
                   onClick={() => setKeypadField({ name: 'areaStandard', title: 'Standard Peak Area', unit: 'mAU*s', val: areaStandard })}
                   className="text-[10px] text-indigo-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -123,7 +123,7 @@ export const HPLCCalculator: React.FC<Props> = ({ activeBatch, activeSpec, onRes
                   onClick={() => setKeypadField({ name: 'weightStandard', title: 'Standard Weight', unit: 'mg', val: weightStandard })}
                   className="text-[10px] text-indigo-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -143,7 +143,7 @@ export const HPLCCalculator: React.FC<Props> = ({ activeBatch, activeSpec, onRes
                   onClick={() => setKeypadField({ name: 'weightSample', title: 'Sample Weight', unit: 'mg', val: weightSample })}
                   className="text-[10px] text-indigo-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -163,7 +163,7 @@ export const HPLCCalculator: React.FC<Props> = ({ activeBatch, activeSpec, onRes
                   onClick={() => setKeypadField({ name: 'purityStandard', title: 'Standard Purity', unit: '%', val: purityStandard })}
                   className="text-[10px] text-indigo-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input

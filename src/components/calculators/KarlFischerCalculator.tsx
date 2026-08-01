@@ -4,7 +4,7 @@ import { calculateKarlFischer, evaluatePassFail } from '../../utils/formulas';
 import { addTestResultToBatch, getActiveUser } from '../../utils/storage';
 import { GaugeMeter } from '../GaugeMeter';
 import { NumericKeypadModal } from '../NumericKeypadModal';
-import { Calculator, Save, AlertTriangle, Keypad } from 'lucide-react';
+import { Calculator, Save, AlertTriangle, Hash } from 'lucide-react';
 
 interface Props {
   activeBatch?: Batch;
@@ -83,7 +83,7 @@ export const KarlFischerCalculator: React.FC<Props> = ({ activeBatch, activeSpec
                   onClick={() => setKeypadField({ name: 'vKf', title: 'KF Reagent Volume', unit: 'mL', val: vKf })}
                   className="text-[10px] text-cyan-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -103,7 +103,7 @@ export const KarlFischerCalculator: React.FC<Props> = ({ activeBatch, activeSpec
                   onClick={() => setKeypadField({ name: 'kfFactor', title: 'KF Factor F', unit: 'mg H2O/mL', val: kfFactor })}
                   className="text-[10px] text-cyan-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input
@@ -123,7 +123,7 @@ export const KarlFischerCalculator: React.FC<Props> = ({ activeBatch, activeSpec
                   onClick={() => setKeypadField({ name: 'weight', title: 'Sample Weight', unit: 'g', val: weight })}
                   className="text-[10px] text-cyan-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input

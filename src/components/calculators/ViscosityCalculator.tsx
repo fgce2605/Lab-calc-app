@@ -4,7 +4,7 @@ import { calculateViscosity, evaluatePassFail } from '../../utils/formulas';
 import { addTestResultToBatch, getActiveUser, getViscosityFactors, saveViscosityFactors } from '../../utils/storage';
 import { GaugeMeter } from '../GaugeMeter';
 import { NumericKeypadModal } from '../NumericKeypadModal';
-import { Calculator, Save, AlertTriangle, Keypad, Settings2, Plus, Trash2, X, Check } from 'lucide-react';
+import { Calculator, Save, AlertTriangle, Hash, Settings2, Plus, Trash2, X, Check } from 'lucide-react';
 
 interface Props {
   activeBatch?: Batch;
@@ -175,7 +175,7 @@ export const ViscosityCalculator: React.FC<Props> = ({ activeBatch, activeSpec, 
                   onClick={() => setKeypadField({ name: 'dialReading', title: 'Viscometer Dial Reading', unit: '% Dial', val: dialReading })}
                   className="text-[10px] text-teal-400 hover:underline flex items-center gap-1 font-mono"
                 >
-                  <Keypad className="w-3 h-3" /> Keypad
+                  <Hash className="w-3 h-3" /> Keypad
                 </button>
               </div>
               <input

@@ -4,7 +4,7 @@ import { calculateSpecificGravity, evaluatePassFail } from '../../utils/formulas
 import { addTestResultToBatch, getActiveUser } from '../../utils/storage';
 import { GaugeMeter } from '../GaugeMeter';
 import { NumericKeypadModal } from '../NumericKeypadModal';
-import { Calculator, Save, AlertTriangle, Keypad } from 'lucide-react';
+import { Calculator, Save, AlertTriangle, Hash } from 'lucide-react';
 
 interface Props {
   activeBatch?: Batch;
